@@ -264,3 +264,100 @@ a:visited {
 .about-company .container .right-side .introvideo i.fa-regular.fa-circle-play:hover {
   color: #FF4500;
 }
+
+/* 
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+
+    .beige-box {
+        width: 100%;
+        height: 870px;
+        background-color: beige;
+        position: relative;
+
+        .decorative-stripe {
+            width: 50px;
+            height: 5px;
+            background-color: black;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .content-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 1320px;
+            height: 630px;
+            margin: 100px auto;
+
+            .tile {
+                width: 308px;
+                height: 333px;
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                position: relative;
+
+                h6 {
+                    margin-top: 50px;
+                }
+
+                p {
+                    margin-bottom: 50px;
+                }
+
+                .circle-btn {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &.white-tile {
+                    background-color: white;
+                }
+
+                &.yellow-tile {
+                    background-color: $light-yellow;
+                }
+            }
+
+            .black-btn {
+                background-color: black;
+                color: white;
+                border: none;
+            }
+
+            .white-btn {
+                background-color: white;
+                color: black;
+                border: none;
+            }
+        }
+
+        .browse-btn {
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+} */
