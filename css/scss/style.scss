@@ -1,5 +1,4 @@
 @import './core/fonts';
-@import './core/mixins';
 @import './core/colors';
 
 
@@ -15,7 +14,7 @@
 
     .logo {
       
-        margin-left: 80px; // Marginal åt vänster
+        margin-left: 80px; 
     }
 
 
@@ -497,7 +496,7 @@
             .cards {
                 display: flex;
                 flex-direction: column;
-                gap: 20px; // Avstånd mellan cards
+                gap: 20px;
 
                 .card {
                     width: 450px;
@@ -531,12 +530,12 @@
                 width: 645px;
                 height: 505px;
                 position: absolute;
-                top: -50%; // För att få den 50% uppåt
+                top: -50%; //för att få den 50% uppåt.
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
         }
     }
-}
+} 
 
 
