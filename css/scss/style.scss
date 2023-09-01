@@ -82,8 +82,8 @@
 .showcase-one {
     display: flex;
     justify-content: center; 
-    align-items: flex-start; 
-    background-color: $light-beige;
+    align-items: center; 
+    background-color: beige;
     height: 780px;
 
     .container {
@@ -159,14 +159,13 @@
 
 .showcase-two {
     margin-top: 100px;
-  
+    
 
     .container {
         display: flex;
         width: 1320px;
         height: 600px;
-
-
+        
 
         .second-title {
             margin-top: 50px;
@@ -232,6 +231,7 @@
       height: 615px;
       display: flex;
       justify-content: space-between;
+    
   
         .left-side {
                     
@@ -470,6 +470,8 @@
     }
 } 
 
+
+// Why choose us
 
 
 

@@ -69,8 +69,8 @@ a:visited {
 .showcase-one {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: #f7ede2;
+  align-items: center;
+  background-color: beige;
   height: 780px;
 }
 .showcase-one .container {
