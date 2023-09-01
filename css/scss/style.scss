@@ -6,91 +6,79 @@
 
 // Topmenu/bar
 .navbar-topmenu {
- 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; 
     width: 100%;
+    padding-top: 30px;
     background-color: $light-beige;
+
+    .logo {
+      
+        margin-left: 80px; // Marginal åt vänster
+    }
 
 
     .section-one {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 0.5rem;
-       
+        width: 90%; 
 
-            .company-fact {
-               
-              margin-left: 200px;
+        .company-fact {
+            margin-left: 320px; 
 
-                span {
-                    margin-right: 20px;
+            span {
+                margin-right: 20px;
 
-                    i {
-                        margin-right: 10px;
-                    }
+                i {
+                    margin-right: 10px;
                 }
             }
-    
-            .logo {
-                
-                margin-left: 50px;
-            }
-        
-    
+        }
+
+     
         .media {
             display: flex;
             align-items: center;
-            align-self: center;
-       
-          
-    
+
             a {
                 margin-right: 15px;
             }
         }
     }
     
-    // Second part of topmenu/bar
+    .section-two {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 90%; 
 
-        .section-two {
+        .links-topmenu {
             display: flex;
-            align-items: center;
-            justify-content: space-between; 
-            width: 100%;
-           
-           
+            justify-content: center;
+            margin-left: 20%; 
 
-            .links-topmenu {
-                display: flex;
-                justify-content: center;
-                margin-left: 15%;
-
-                a {
-                    margin-right: 25px;
-                    text-decoration: none;
-                }
-            }
-
-            .button-login {
-                width: 120px;
-                height: 40px;
-                background-color: $light-yellow;
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            a {
+                margin-right: 25px;
+                text-decoration: none;
             }
         }
+
+        .button-login {
+            width: 120px;
+            height: 40px;
+            background-color: $light-yellow;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
-
 // First Showcase
-
 .showcase-one {
     display: flex;
     justify-content: center; 
@@ -100,15 +88,13 @@
 
     .container {
         display: flex;
-        
-        width: 100%; 
+        width: 90%; 
         justify-content: space-between;
 
         .content {
             display: flex;
             flex-direction: column; 
-            align-items: flex-start; 
-           
+            align-items: flex-start;
 
             .first-title {
                 margin-top: 30px;
@@ -131,7 +117,7 @@
                     width: 180px;
                     height: 40px;
                     margin-right: 10px;
-                    border-radius: 30px; 
+                    border-radius: 30px;
 
                     &:first-child {
                         background-color: $light-yellow;
@@ -144,17 +130,15 @@
             }
         }
 
-
         .showcase-image {
-            width: 50%; 
+            width: 40%; 
             height: auto;
+            margin-right: 130px;
         }
     }
 }
 
-
 // Third section - company info img
-
 .company {
     .container {
         display: flex;
@@ -166,10 +150,10 @@
             width: 150px;
             height: auto;
         }
-
     }
-
 }
+
+
 
 // Fourth section 
 
@@ -179,13 +163,9 @@
 
     .container {
         display: flex;
-        width: 1520px;
+        width: 1320px;
         height: 600px;
 
-
-        .showcase-two-leftside {
-            margin-left: 40px;
-        }
 
 
         .second-title {
@@ -378,18 +358,27 @@
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 100px;
+
 
     .beige-box {
         width: 100%;
         height: 870px;
         background-color: beige;
         position: relative;
+       
+       
+        .our-services {
+            color: #FF4500;
+            margin-left: 300px;
+            margin-top: 50px;
+    
+        }
 
         h1{
             font-weight: bold;
-            margin-top: 100px;
-            margin-left: 100px;
+            margin-left: 300px;
+           
         }
        
 
@@ -430,7 +419,7 @@
                 .circle-btn {
                     width: 40px;
                     height: 40px;
-                    border-radius: 90%;
+                    border-radius: 50%;
                     position: absolute;
                     bottom: 10px;
                     left: 50%;
@@ -438,6 +427,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-bottom: 20px;
+                   
                 }
 
                 &.white-tile {
@@ -465,7 +456,7 @@
         .browse-btn {
             background-color: beige;
             border: 2px solid black;
-            border-radius: 20px;
+            border-radius: 40px;
             padding: 10px 20px;
             position: absolute;
             bottom: 20px;
@@ -474,6 +465,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 50px;
         }
     }
 } 
