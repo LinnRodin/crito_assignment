@@ -473,5 +473,70 @@
 
 // Why choose us
 
+.custom-section {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 1500px;
+        height: 630px;
+
+        .left-column {
+            width: 30%;
+            flex-direction: column;
+
+            h6 {
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+
+            .main-title {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 20px; // Avstånd mellan cards
+
+                .card {
+                    width: 450px;
+                    height: 630px/4; // Delar upp höjden mellan 4 cards
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 24px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .right-column {
+            width: 70%;
+            position: relative;
+
+            .beige-box {
+                width: 1057px;
+                height: 425px;
+                background-color: beige;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .overlapping-image {
+                width: 645px;
+                height: 505px;
+                position: absolute;
+                top: -50%; // För att få den 50% uppåt
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
 
 

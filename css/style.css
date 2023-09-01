@@ -355,3 +355,58 @@ a:visited {
   justify-content: center;
   margin-bottom: 50px;
 }
+
+.custom-section .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+  height: 630px;
+}
+.custom-section .container .left-column {
+  width: 30%;
+  flex-direction: column;
+}
+.custom-section .container .left-column h6 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.custom-section .container .left-column .main-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.custom-section .container .left-column .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.custom-section .container .left-column .cards .card {
+  width: 450px;
+  height: 630px/4;
+  display: flex;
+  align-items: center;
+}
+.custom-section .container .left-column .cards .card i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.custom-section .container .right-column {
+  width: 70%;
+  position: relative;
+}
+.custom-section .container .right-column .beige-box {
+  width: 1057px;
+  height: 425px;
+  background-color: beige;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.custom-section .container .right-column .overlapping-image {
+  width: 645px;
+  height: 505px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
