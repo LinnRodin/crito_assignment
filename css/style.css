@@ -13,7 +13,7 @@ a:visited {
   align-items: center;
   width: 100%;
   padding-top: 30px;
-  background-color: #f7ede2;
+  background-color: beige;
 }
 .navbar-topmenu .logo {
   margin-left: 80px;
@@ -75,6 +75,7 @@ a:visited {
 }
 .showcase-one .container {
   display: flex;
+  height: 100%;
   width: 90%;
   justify-content: space-between;
 }
@@ -108,12 +109,13 @@ a:visited {
   background-color: #fadc66;
 }
 .showcase-one .container .content .buttons button:last-child {
-  background-color: #f7ede2;
+  background-color: beige;
 }
 .showcase-one .container .showcase-image {
   width: 40%;
   height: auto;
   margin-right: 130px;
+  margin-top: -20px;
 }
 
 .company .container {
@@ -356,41 +358,68 @@ a:visited {
   margin-bottom: 50px;
 }
 
+.custom-section {
+  padding: 50px 0;
+}
 .custom-section .container {
   display: flex;
   justify-content: space-between;
   width: 1500px;
   height: 630px;
+  gap: 30px;
 }
 .custom-section .container .left-column {
   width: 30%;
-  flex-direction: column;
+  padding-right: 15px;
 }
 .custom-section .container .left-column h6 {
-  font-weight: normal;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  color: #FF4500;
 }
 .custom-section .container .left-column .main-title {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .custom-section .container .left-column .cards {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
-.custom-section .container .left-column .cards .card {
-  width: 450px;
-  height: 630px/4;
-  display: flex;
-  align-items: center;
+.custom-section .container .left-column .cards h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
 }
-.custom-section .container .left-column .cards .card i {
-  font-size: 24px;
+.custom-section .container .left-column .cards h4 i {
   margin-right: 10px;
 }
+.custom-section .container .left-column .cards .under-text {
+  margin-left: 35px;
+}
+.custom-section .container .left-column .cards .card {
+  width: 330px;
+  height: 157.5px;
+  display: flex;
+  align-items: start;
+  border: none;
+}
+.custom-section .container .left-column .cards .card .icon-container i {
+  font-size: 24px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+}
+.custom-section .container .left-column .cards .card .text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.custom-section .container .left-column .cards .card .text-container h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 .custom-section .container .right-column {
-  width: 70%;
+  width: 60%;
+  padding-left: 15px;
   position: relative;
 }
 .custom-section .container .right-column .beige-box {
@@ -398,15 +427,14 @@ a:visited {
   height: 425px;
   background-color: beige;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 330px;
+  right: 0;
 }
 .custom-section .container .right-column .overlapping-image {
-  width: 645px;
-  height: 505px;
+  width: 700px;
+  height: 520px;
   position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40px;
+  left: 45%;
+  transform: translateX(-50%);
 }
