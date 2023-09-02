@@ -519,3 +519,166 @@ a:visited {
   background-color: white;
   color: black;
 }
+
+.team-section {
+  width: 1920;
+  height: 1964px;
+  background-color: #F0D082;
+  padding: 50px 0;
+  position: relative;
+}
+.team-section .carousel-slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+.team-section img {
+  width: 308px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-section .header-container h6 {
+  color: #FF4500;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+.team-section .header-container h1 {
+  margin-bottom: 20px;
+  margin-left: 300px;
+  font-weight: bold;
+}
+.team-section .header-container .browse-team-btn {
+  background-color: #F0D082;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.team-section .header-container .browse-team-btn i {
+  margin-left: 10px;
+}
+.team-section .header-container .browse-team-btn:hover {
+  background-color: #ebbf54;
+}
+.team-section .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.team-section .carousel-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 5px;
+}
+.team-section .carousel-indicators span.active {
+  background-color: #bababa;
+}
+
+.testimonial-container {
+  width: 1520px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonial-container h6 {
+  color: #FF4500;
+  text-align: center;
+  margin-top: 20px;
+}
+.testimonial-container h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.testimonial-container .testimonial-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card {
+  width: 480px;
+  height: 402px;
+  background-color: white;
+  border: none;
+  padding: 20px;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .stars {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .stars i {
+  font-size: 16px;
+  color: #FF4500;
+  margin-right: 5px;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .stars i:last-child {
+  margin-right: 0;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .testimonial-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .client-info {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .client-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .client-info div strong {
+  font-weight: bold;
+}
+.testimonial-container .testimonial-cards-container .testimonial-card .client-info div p {
+  color: #FF4500;
+}
+.testimonial-container .reviews-btn {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 50px auto;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.testimonial-container .reviews-btn i {
+  margin-left: 10px;
+}
+.testimonial-container .reviews-btn:hover {
+  background-color: black;
+}
+
+@media (max-width: 1200px) {
+  .team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
+    flex: 0 0 100%;
+  }
+}
