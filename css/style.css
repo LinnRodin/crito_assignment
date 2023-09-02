@@ -56,14 +56,27 @@ a:visited {
   margin-right: 25px;
   text-decoration: none;
 }
+.navbar-topmenu .section-two .links-topmenu a:hover {
+  text-transform: uppercase;
+  color: #FF4500;
+}
 .navbar-topmenu .section-two .button-login {
   width: 120px;
   height: 40px;
-  background-color: #fadc66;
+  background-color: #F0D082;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+.navbar-topmenu .section-two .button-login:hover {
+  background-color: #000;
+  color: white;
+}
+.navbar-topmenu .section-two .button-login i {
+  margin-left: 5px;
 }
 
 .showcase-one {
@@ -104,12 +117,25 @@ a:visited {
   height: 40px;
   margin-right: 10px;
   border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.showcase-one .container .content .buttons button i {
+  margin-left: 5px;
 }
 .showcase-one .container .content .buttons button:first-child {
-  background-color: #fadc66;
+  background-color: #F0D082;
+  border: none;
+}
+.showcase-one .container .content .buttons button:first-child:hover {
+  background-color: #000;
+  color: white;
 }
 .showcase-one .container .content .buttons button:last-child {
   background-color: beige;
+}
+.showcase-one .container .content .buttons button:last-child:hover {
+  background-color: #000;
+  color: white;
 }
 .showcase-one .container .showcase-image {
   width: 40%;
@@ -153,7 +179,16 @@ a:visited {
   height: 40px;
   margin-right: 10px;
   border-radius: 30px;
-  background-color: #fadc66;
+  background-color: #F0D082;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+}
+.showcase-two .container .button-learnmore .yellow-button:hover {
+  background-color: #000;
+  color: white;
+}
+.showcase-two .container .button-learnmore .yellow-button i {
+  margin-left: 5px;
 }
 .showcase-two .flex-container {
   display: flex;
@@ -337,11 +372,21 @@ a:visited {
   background-color: black;
   color: white;
   border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container .beige-box .content-box .black-btn:hover {
+  background-color: white;
+  color: black;
 }
 .container .beige-box .content-box .white-btn {
   background-color: white;
   color: black;
   border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container .beige-box .content-box .white-btn:hover {
+  background-color: #000;
+  color: white;
 }
 .container .beige-box .browse-btn {
   background-color: beige;
@@ -356,6 +401,14 @@ a:visited {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container .beige-box .browse-btn:hover {
+  background-color: #000;
+  color: white;
+}
+.container .beige-box .browse-btn i {
+  margin-left: 10px;
 }
 
 .custom-section {
@@ -499,6 +552,9 @@ a:visited {
 }
 .project-section .container .cards-container .card .read-more i {
   margin-left: 10px;
+}
+.project-section .container .cards-container .card .read-more:hover {
+  color: #FF4500;
 }
 .project-section .container .projects-btn {
   display: block;
@@ -660,16 +716,16 @@ a:visited {
   color: white;
   padding: 10px 20px;
   margin: 50px auto;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 .testimonial-container .reviews-btn i {
   margin-left: 10px;
 }
 .testimonial-container .reviews-btn:hover {
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 @media (max-width: 1200px) {
