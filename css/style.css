@@ -438,3 +438,84 @@ a:visited {
   left: 45%;
   transform: translateX(-50%);
 }
+
+.project-section .container {
+  width: 1320px;
+  height: 1400px;
+  background-color: white;
+}
+.project-section .container h6 {
+  color: #FF4500;
+  z-index: 10;
+  text-align: center;
+  margin-top: 150px;
+}
+.project-section .container h1 {
+  color: black;
+  font-weight: bold;
+  z-index: 10;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-section .container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.project-section .container .cards-container .card {
+  position: relative;
+  width: 645px;
+  height: 445px;
+  border: 1px solid lightgray;
+}
+.project-section .container .cards-container .card img {
+  width: 645px;
+  height: 300px;
+}
+.project-section .container .cards-container .card p {
+  color: black;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.project-section .container .cards-container .card hr {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  width: 90%;
+}
+.project-section .container .cards-container .card .read-more {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-section .container .cards-container .card .read-more i {
+  margin-left: 10px;
+}
+.project-section .container .projects-btn {
+  display: block;
+  width: 238px;
+  height: 56px;
+  background-color: black;
+  color: white;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 56px;
+  margin: 100px auto 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+.project-section .container .projects-btn i {
+  margin-left: 10px;
+}
+.project-section .container .projects-btn:hover {
+  background-color: white;
+  color: black;
+}
