@@ -1,4 +1,4 @@
-/* $(document).ready(function(){
+/*  $(document).ready(function(){
     // Carousel for articles and news
     $('.carousel-article').slick({
         dots: true,
@@ -19,4 +19,4 @@
         variableWidth: true
     });
 });
- */
+  */

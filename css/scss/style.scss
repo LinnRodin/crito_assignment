@@ -972,25 +972,6 @@
 
 
 
-// Responsiv design
-
-@media (max-width: 1200px) {
-.team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
-    flex: 0 0 calc(33.33% - 20px);
-}
-}
-
-@media (max-width: 768px) {
-.team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
-    flex: 0 0 calc(50% - 20px);
-}
-}
-
-@media (max-width: 480px) {
-.team-cards-container .team-card, .testimonial-cards-container .testimonial-card {
-    flex: 0 0 100%;
-}
-}
 
 //Article and News
 
@@ -1044,9 +1025,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: background-color 0.3s;
 
             i {
                 margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: black;
+                color: white;
             }
         }
     }
@@ -1054,6 +1041,7 @@
 
 .carousel-article {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1065,7 +1053,7 @@
         margin: 0 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
 
         img {
             width: 420px;
@@ -1077,6 +1065,96 @@
             margin: 5px 0;
         }
     }
+
+
+    
+    .carousel-article-news {
+
+        width: fit-content;
+        position: absolute;
+        left: 33%; 
+        bottom: -80px; 
+        
+        
+        span {
+            display: inline-block; 
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: grey;
+            margin: 0 5px;
+            cursor: pointer; 
+    
+            &:hover, 
+            &.slides {
+                background-color: black;
+            }
+        }
+    }
+
 }
 
+
+// Subscribe 
+
+.signup-section {
+    width: 1920px;
+    height: 270px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signup-container {
+        width: 1270px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        input[type="email"] {
+            width: 308px;
+            height: 56px;
+            border-radius: 28px;
+            border: none;
+            padding: 0 15px;
+            background-color: white;
+            color: lightgray;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+                color: black;
+            }
+        }
+
+        .subscribe-btn {
+            width: 171px;
+            height: 56px;
+            background-color: #F0D082; 
+            color: black;
+            border: none;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -200px;
+            transition: background-color 0.3s;
+
+            i {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
 
