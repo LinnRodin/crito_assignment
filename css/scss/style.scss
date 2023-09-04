@@ -1362,7 +1362,6 @@ footer {
 
 
 // Form Section---------------------------------------------------------------------------------------
-
 .contact-section {
     width: 100%;
     max-width: 1920px;
@@ -1371,11 +1370,50 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 400px; 
+    padding-top: 200px; 
 
     .content-container {
         width: 80%;
         margin-bottom: 100px;
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            width: 1320px;
+            height: 206px;
+            margin-bottom: 30px;
+
+            .info-box {
+                width: 420px;
+                height: 206px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                margin-right: 100px;
+                border: solid 1px grey;
+
+                i {
+                    font-size: 24px; 
+                    color: white; 
+                    background-color: black; 
+                    border-radius: 60%; 
+                    padding: 20px; 
+                    margin-right: 20px;
+                }
+
+                .text-section {
+                    h6 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
     }
 
     .form-container {
@@ -1453,6 +1491,7 @@ footer {
         }
     }
 }
+
 
 
 
