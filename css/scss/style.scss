@@ -1350,3 +1350,126 @@ footer {
     }
   }
   
+
+//Company info and contact info. --------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+// Form Section---------------------------------------------------------------------------------------
+
+.contact-section {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 1500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 400px; 
+
+    .content-container {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .form-container {
+        width: 1200px;
+        background-color: #F0EFE9;
+        height: 766px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            color: black;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        form {
+            width: 70%; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            input, textarea {
+                width: 100%; 
+                padding: 10px;
+                border: none;
+                border-radius: 30px;
+                background-color: white;
+                color: grey;
+                font-size: 16px;
+                outline: none;
+
+                &::placeholder {
+                    color: lightgrey;
+                    padding-left: 20px;
+                }
+
+                &:focus {
+                    border: 2px solid lightgrey;
+                }
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                height: 56px;
+            }
+
+            textarea {
+                height: 160px;
+                resize: none;
+            }
+
+            button {
+                width: 100%; 
+                height: 56px;
+                background-color: #F0D082;
+                border: none;
+                border-radius: 30px;
+                color: black;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  //Map Section-------------------------------------------------------------------------------------------
+
+  .map {
+    iframe {
+        width: 100%;
+        height: 620px;
+    }
+}
+
+
