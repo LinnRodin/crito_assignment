@@ -3,7 +3,7 @@
 
 
 
-// Topmenu/bar
+// Topmenu/bar------------------------------------------------------------------------------------------------------------------------------------------------
 
 .navbar-topmenu {
     display: flex;
@@ -11,7 +11,7 @@
     align-items: center; 
     width: 100%;
     padding-top: 30px;
-    background-color: beige;
+    background-color: #F0EFE9;
 
     .logo {
       
@@ -100,12 +100,16 @@
     }
 }
 
+
+
+//Showcase one-----------------------------------------------------------------------------------------------------------------------------------------------------
 .showcase-one {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    background-color: beige;
+    background-color: #F0EFE9;
     height: 780px;
+    position: relative;
 
     .container {
         display: flex;
@@ -158,7 +162,7 @@
                     }
 
                     &:last-child {
-                        background-color: beige;
+                        background-color: #F0EFE9;;
 
                         &:hover {
                             background-color: #000;
@@ -177,10 +181,24 @@
             margin-top: -20px;
         }
     }
+
+    .showcase-wave-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: auto; 
+        height: auto; 
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 
-// Third section - company info img
+
+// Third section - company info img------------------------------------------------------------------------------------------------------------
 
 .company {
     .container {
@@ -198,7 +216,7 @@
 
 
 
-// Fourth section 
+// Fourth section - Our Accounting ----------------------------------------------------------------------------------------------------------------
 
 .showcase-two {
     margin-top: 100px;
@@ -278,7 +296,7 @@
     
 }
 
-// About Company
+// About Company--------------------------------------------------------------------------------------------------------------------------------------
 
 .about-company {
 
@@ -297,7 +315,7 @@
             img {
             width: 533px;
             height: 615px;
-            object-fit: cover; // För att behålla bildens förhållanden.
+            object-fit: cover; 
             }
     
             .blue-box {
@@ -407,42 +425,33 @@
   
 }
 
-// Our Services 
 
-.container {
-    max-width: 1920px;
-    margin: 0 auto;
+
+// Our Services ----------------------------------------------------------------------------------------------------------------
+
+$light-yellow: #F0D082;
+
+.beige-box {
+    width: 100%;
+    height: 870px;
+    background-color: #F0EFE9;
+    position: relative;
     margin-top: 100px;
 
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+        margin-top: 100px;
 
-    .beige-box {
-        width: 100%;
-        height: 870px;
-        background-color: beige;
-        position: relative;
-       
-       
         .our-services {
             color: #FF4500;
-            margin-left: 300px;
-            margin-top: 50px;
-    
+            margin-left: 270px;
+            padding-top: 100px;
         }
 
-        h1{
+        h1 {
             font-weight: bold;
-            margin-left: 300px;
-           
-        }
-       
-
-        .decorative-stripe {
-            width: 50px;
-            height: 5px;
-            background-color: black;
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            margin-left: 270px;
         }
 
         .content-box {
@@ -452,7 +461,6 @@
             width: 1320px;
             height: 630px;
             margin: 100px auto;
-          
 
             .tile {
                 width: 308px;
@@ -470,6 +478,15 @@
                     margin-bottom: 50px;
                 }
 
+                .decorative-stripe {
+                    width: 50px;
+                    height: 5px;
+                    background-color: black;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+
                 .circle-btn {
                     width: 40px;
                     height: 40px;
@@ -482,7 +499,6 @@
                     align-items: center;
                     justify-content: center;
                     margin-bottom: 20px;
-                   
                 }
 
                 &.white-tile {
@@ -501,13 +517,9 @@
                 transition: background-color 0.3s, color 0.3s;
 
                 &:hover {
-                 background-color: white;
-                 color: black;
-                 
+                    background-color: white;
+                    color: black;
                 }
-
-
-
             }
 
             .white-btn {
@@ -516,16 +528,15 @@
                 border: none;
                 transition: background-color 0.3s, color 0.3s;
 
-               &:hover {
-                background-color: #000;
-                color: white;
-                
+                &:hover {
+                    background-color: #000;
+                    color: white;
                 }
             }
         }
 
         .browse-btn {
-            background-color: beige;
+            background-color: #F0EFE9;
             border: 2px solid black;
             border-radius: 40px;
             padding: 10px 20px;
@@ -542,21 +553,29 @@
             &:hover {
                 background-color: #000;
                 color: white;
-                
             }
 
             i {
                 margin-left: 10px;
             }
-
         }
-
-     
     }
-} 
+
+    .image-our-services {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
 
 
-//Why Choose Us
+
+//Why Choose Us----------------------------------------------------------------------------------------------------
 
 .custom-section {
     padding: 50px 0;
@@ -566,11 +585,11 @@
         justify-content: space-between;
         width: 1500px;
         height: 630px;
-        gap: 30px; 
+        gap: 20px; 
        
 
         .left-column {
-            width: 30%;
+            width: 28%;
             padding-right: 15px;
             
 
@@ -624,7 +643,7 @@
                     .text-container {
                         display: flex;
                         flex-direction: column;
-                        margin-left: 30px;
+                        margin-left: 10px;
 
                         h1 {
                             margin: 0;
@@ -635,35 +654,40 @@
                 }
             }
         }
-
+        //--------------------------------------------------------------------------------------------------
         .right-column {
-            width: 60%;
+            width: 30%;
             padding-left: 15px;
             position: relative;
+            
 
             .beige-box {
                 width: 1057px;
                 height: 425px;
-                background-color: beige;
+                background-color: #F0EFE9;
                 position: absolute;
-                top: 330px;
-                right: 0;
-                
+                top: 280px;
+                left: 50%; 
+                transform: translateX(-65%); //justerar den beiga bakgrunden vid behov av ändring i x-led
             }
 
             .overlapping-image {
                 width: 700px;
                 height: 520px;
                 position: absolute;
-                top: 40px;
-                left: 45%;
-                transform: translateX(-50%);
+                top: 50px;
+                left: 33%;
+                transform: translateX(-65%); //justerar överlappande bild vid behov av ändring i x-led
             }
         }
     }
 }
 
-// Project and Cases
+
+
+
+
+// Project and Cases Studies-------------------------------------------------------------------------------------
 
 .project-section {
     
@@ -676,7 +700,7 @@
         color: #FF4500;
         z-index: 10;
         text-align: center;
-        margin-top: 150px;
+        margin-top: 200px;
       }
   
       h1 {
@@ -718,7 +742,7 @@
             position: absolute;
             bottom: 40px;
             left: 20px;
-            width: 90%; // Anpassar bredden av hr till kortets bredd
+            width: 90%; 
           }
   
           .read-more {
@@ -973,7 +997,7 @@
 
 
 
-//Article and News
+//Article and News----------------------------------------------------------------------------------------------
 
 .wrapper-article {
     background-color: white;
@@ -1095,12 +1119,12 @@
 }
 
 
-// Subscribe 
+// Subscribe --------------------------------------------------------------------------------------------------------
 
 .signup-section {
     width: 1920px;
     height: 270px;
-    background-color: beige;
+    background-color: #F0EFE9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1158,7 +1182,7 @@
     }
 }
 
-// footer 
+// footer ---------------------------------------------------------------------------------------------------------------
 footer {
     background-color: black;
     max-width: 1920px;
@@ -1257,3 +1281,60 @@ footer {
         }
     }
 }
+
+
+//---------------------------------------------------- Contact Page --------------------------------------------------------------------------------------
+
+.showcase-contact {
+    width: 1920px;
+    height: 300px;
+    background-color: #F0EFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    .container {
+      width: 366px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  
+      .links-contact {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+  
+        a {
+          color: black;
+          text-decoration: none;
+          transition: color 0.3s;
+  
+          &:hover {
+            color:#FF4500;
+          }
+        }
+      }
+  
+      h1 {
+        color: black;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+    }
+  
+    .showcase-image-wayvy-lines {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  
