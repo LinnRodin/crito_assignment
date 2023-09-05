@@ -1495,7 +1495,7 @@ footer {
 
 
 
-  //Map Section-------------------------------------------------------------------------------------------
+  //Map Section-------------------------------------------------------------------
 
   .map {
     iframe {
@@ -1505,3 +1505,145 @@ footer {
 }
 
 
+
+
+
+//----------------------------------------------------------Page-News------------------------------------------------------------
+
+
+// Showcase news
+
+.showcase-news {
+    width: 1920px;
+    height: 300px;
+    background-color: #F0EFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    .container-news {
+      width: 366px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  
+      .links-news {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+  
+        a {
+          color: black;
+          text-decoration: none;
+          transition: color 0.3s;
+  
+          &:hover {
+            color:#FF4500;
+          }
+        }
+      }
+  
+      h1 {
+        color: black;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+
+      .showcase-image-news {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+
+
+    }
+  
+}
+
+// Showcase end
+
+
+// ---------------------------------News Cards section --------------------------------------------------------
+
+.wrapper-news {
+    background-color: white;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.container-news {
+    width: 1320px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-news {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  
+    h1 {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+
+    
+}
+
+.cards-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; 
+    
+
+    .wrapper-cards-news {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; 
+    }
+
+    .card-body-news {
+        flex: 0 0 auto;
+        width: 420px;
+        height: 428px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+            width: 420px;
+            height: 230px;
+        }
+
+        h6 {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    }
+
+   
+}

@@ -1175,3 +1175,111 @@ footer .end-footer .social-media a i {
   width: 100%;
   height: 620px;
 }
+
+.showcase-news {
+  width: 1920px;
+  height: 300px;
+  background-color: #F0EFE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.showcase-news .container-news {
+  width: 366px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.showcase-news .container-news .links-news {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.showcase-news .container-news .links-news a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.showcase-news .container-news .links-news a:hover {
+  color: #FF4500;
+}
+.showcase-news .container-news h1 {
+  color: black;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.showcase-news .container-news .showcase-image-news {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.showcase-news .container-news .showcase-image-news img {
+  width: auto;
+  height: auto;
+}
+
+.wrapper-news {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-news {
+  width: 1320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-news {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.header-news h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cards-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.cards-news .wrapper-cards-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cards-news .card-body-news {
+  flex: 0 0 auto;
+  width: 420px;
+  height: 428px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cards-news .card-body-news img {
+  width: 420px;
+  height: 230px;
+}
+.cards-news .card-body-news h6 {
+  font-weight: bold;
+  margin: 5px 0;
+}
