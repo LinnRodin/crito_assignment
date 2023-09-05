@@ -1574,7 +1574,6 @@ footer {
 
 
 // ---------------------------------News Cards section --------------------------------------------------------
-
 .wrapper-news {
     background-color: white;
     width: 100%;
@@ -1604,9 +1603,6 @@ footer {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    
-
-    
 }
 
 .cards-news {
@@ -1615,7 +1611,6 @@ footer {
     align-items: center;
     width: 100%;
     margin-top: 20px; 
-    
 
     .wrapper-cards-news {
         display: flex;
@@ -1633,6 +1628,23 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
+
+        .date-stamp {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #F0D082;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            width: 56px;
+            height: 64px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
 
         img {
             width: 420px;
@@ -1644,6 +1656,31 @@ footer {
             margin: 5px 0;
         }
     }
+}
 
-   
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    .pagination-btn {
+        background-color: #f0f0f0;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .pagination-numbers {
+        display: flex;
+        gap: 10px;
+        margin: 0 20px;
+
+        span {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+        }
+    }
 }
