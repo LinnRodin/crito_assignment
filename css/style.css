@@ -1062,24 +1062,29 @@ footer .end-footer .social-media a i {
 }
 .contact-section .content-container {
   width: 80%;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 .contact-section .content-container .info-section {
   display: flex;
-  justify-content: space-between;
-  width: 1320px;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1320px;
   height: 206px;
   margin-bottom: 30px;
+  margin: 0 auto;
 }
 .contact-section .content-container .info-section .info-box {
   width: 420px;
   height: 206px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
-  margin-right: 100px;
-  border: solid 1px grey;
+  padding: 0 20px;
+  border: solid 1px lightgrey;
+  box-sizing: border-box;
 }
 .contact-section .content-container .info-section .info-box i {
   font-size: 24px;
