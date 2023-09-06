@@ -16,9 +16,6 @@ a:visited {
   padding-top: 30px;
   background-color: #F0EFE9;
 }
-.navbar-topmenu .logo {
-  margin-left: 80px;
-}
 .navbar-topmenu .section-one {
   display: flex;
   flex-direction: row;
@@ -27,7 +24,7 @@ a:visited {
   width: 90%;
 }
 .navbar-topmenu .section-one .company-fact {
-  margin-right: 70px;
+  margin-right: 30px;
 }
 .navbar-topmenu .section-one .company-fact .fact-content {
   margin-right: 20px;
