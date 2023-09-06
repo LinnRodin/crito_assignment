@@ -13,6 +13,7 @@
     padding-top: 30px;
     background-color: #F0EFE9;
 
+
     .logo {
       
         margin-left: 80px; 
@@ -22,18 +23,24 @@
     .section-one {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         width: 90%; 
 
-        .company-fact {
-            margin-left: 320px; 
 
-            span {
+        .company-fact {
+            margin-right: 70px; 
+           
+            .fact-content {
                 margin-right: 20px;
+                position: relative;
+                padding-right: 20px; 
+                border-right: 1px solid black;
+                
 
                 i {
                     margin-right: 10px;
+
                 }
             }
         }
@@ -41,13 +48,14 @@
      
         .media {
             display: flex;
-            align-items: center;
+            justify-content: flex-end;
 
             a {
                 margin-right: 15px;
             }
         }
     }
+
     //-------------------------------------------------------------------------------------------------
     .section-two {
         display: flex;
@@ -205,7 +213,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 38px;
+        margin-top: 50px;
 
         .companyimg {
             width: 150px;
@@ -272,7 +280,7 @@
         gap: 30px;
     
         > div {
-            flex: 1; // Varje direkt child till .flex-container tar upp lika mycket utrymme
+            flex: 1; 
         }
     }
     
