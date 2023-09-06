@@ -30,7 +30,7 @@ a:visited {
   margin-right: 20px;
   position: relative;
   padding-right: 20px;
-  border-right: 1px solid black;
+  border-right: 1px solid lightgray;
 }
 .navbar-topmenu .section-one .company-fact .fact-content i {
   margin-right: 10px;
@@ -1512,4 +1512,76 @@ footer .end-footer .social-media a i {
 .wrapper-details .container-details .cards-news-details .card-body-details h6 {
   font-weight: bold;
   margin: 5px 0;
+}
+
+.sidebar-details {
+  width: 420px;
+  height: 1000px;
+  margin-right: 20px;
+  background-color: #F0EFE9;
+  padding: 40px;
+  float: right;
+  margin-top: -1480px;
+}
+.sidebar-details .sidebar-container .container {
+  margin-bottom: 20px;
+}
+.sidebar-details .sidebar-container .container .input-group {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.sidebar-details .sidebar-container .container .input-group .input-group-prepend {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  background: none;
+}
+.sidebar-details .sidebar-container .container .input-group .input-group-prepend span {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50px;
+  color: lightgray;
+  font-weight: bold;
+}
+.sidebar-details .sidebar-container .container .input-group .input-group-prepend span i {
+  margin-right: 10px;
+  color: lightgray;
+}
+.sidebar-details .sidebar-container .container .input-group .form-control {
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  padding-left: 40px;
+  border: 1px solid lightgray;
+}
+.sidebar-details .sidebar-container .container .input-group .form-control::-moz-placeholder {
+  color: lightgray;
+}
+.sidebar-details .sidebar-container .container .input-group .form-control::placeholder {
+  color: lightgray;
+}
+.sidebar-details .sidebar-container .box-one-sidebar, .sidebar-details .sidebar-container .box-two-sidebar {
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.sidebar-details .sidebar-container .box-one-sidebar h6, .sidebar-details .sidebar-container .box-two-sidebar h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sidebar-details .sidebar-container .box-one-sidebar p, .sidebar-details .sidebar-container .box-two-sidebar p {
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.sidebar-details .sidebar-container .box-one-sidebar p.date-details, .sidebar-details .sidebar-container .box-two-sidebar p.date-details {
+  color: lightgray;
+  font-weight: normal;
+}
+.sidebar-details .sidebar-container .box-one-sidebar p span, .sidebar-details .sidebar-container .box-two-sidebar p span {
+  color: lightgray;
+  font-weight: bold;
 }

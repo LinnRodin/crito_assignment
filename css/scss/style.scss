@@ -21,16 +21,15 @@
         justify-content: flex-end;
         align-items: center;
         width: 90%; 
-
-
+     
         .company-fact {
             margin-right: 30px; 
-           
+            
             .fact-content {
                 margin-right: 20px;
                 position: relative;
                 padding-right: 20px; 
-                border-right: 1px solid black;
+                border-right: 1px solid lightgray;
                 
 
                 i {
@@ -1805,6 +1804,7 @@ footer {
     align-items: center;
     padding: 20px; 
 
+    
 
     .container-details {
         width: 1320px;
@@ -1872,6 +1872,7 @@ footer {
 
 
 
+
         .cards-news-details {
             display: flex;
             flex-direction: column;
@@ -1928,6 +1929,91 @@ footer {
 }
 
 
+
+
+//Sidebar
+
+.sidebar-details {
+    width: 420px; 
+    height: 1000px; 
+    margin-right: 20px; 
+    background-color: #F0EFE9; 
+    padding: 40px; 
+    float: right; // För att positionera sidofältet till höger
+    margin-top: -1480px; // För att flytta upp sidofältet i linje med bildens övre kant
+
+    .sidebar-container {
+        .container {
+            margin-bottom: 20px;
+
+            .input-group {
+                position: relative; // För att positionera sökikonen korrekt
+                border: 1px solid lightgray; // Återinför gränsen
+                border-radius: 50px; // För helt rundade hörn
+                padding: 0 20px; // Lägger till padding inuti sökfältet
+
+                .input-group-prepend {
+                    position: absolute; // För att positionera sökikonen korrekt
+                    top: 50%;
+                    left: 16px;
+                    transform: translateY(-50%);
+                    background: none; // För att ta bort bakgrunden
+
+                    span {
+                        background-color: #f0f0f0; // Återställer bakgrundsfärgen
+                        border: none; // Tar bort gränsen
+                        border-radius: 50px; // Gör span helt rund
+                        color: lightgray;
+                        font-weight: bold;
+
+                        i {
+                            margin-right: 10px; // Återinför marginalen
+                            color: lightgray; // Återställer färgen på ikonen
+                        }
+                    }
+                }
+
+                .form-control {
+                    background-color: #f0f0f0;
+                    border-radius: 50px; // Gör input-fältet helt rund
+                    padding-left: 40px; // För att skapa utrymme för sökikonen
+                    border: 1px solid lightgray; // Återinför gränsen
+                    &::placeholder {
+                        color: lightgray;
+                    }
+                }
+            }
+        }
+
+        .box-one-sidebar, .box-two-sidebar {
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-bottom: 20px;
+
+            h6 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: bold;
+                border-bottom: 1px solid lightgray;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+
+                &.date-details {
+                    color: lightgray;
+                    font-weight: normal;
+                }
+
+                span {
+                    color: lightgray;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
 
 
 
