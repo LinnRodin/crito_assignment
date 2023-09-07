@@ -1932,54 +1932,52 @@ footer {
 
 
 //Sidebar
-
 .sidebar-details {
     width: 420px; 
     height: 1000px; 
     margin-right: 20px; 
     background-color: #F0EFE9; 
     padding: 40px; 
-    float: right; // För att positionera sidofältet till höger
-    margin-top: -1480px; // För att flytta upp sidofältet i linje med bildens övre kant
+    float: right; 
+    margin-top: -1480px; 
 
     .sidebar-container {
         .container {
             margin-bottom: 20px;
 
             .input-group {
-                position: relative; // För att positionera sökikonen korrekt
-                border: 1px solid lightgray; // Återinför gränsen
-                border-radius: 50px; // För helt rundade hörn
-                padding: 0 20px; // Lägger till padding inuti sökfältet
+                position: relative;
+              
 
                 .input-group-prepend {
-                    position: absolute; // För att positionera sökikonen korrekt
+                    position: absolute;
                     top: 50%;
-                    left: 16px;
                     transform: translateY(-50%);
-                    background: none; // För att ta bort bakgrunden
+                    background: none;
+                    
 
                     span {
-                        background-color: #f0f0f0; // Återställer bakgrundsfärgen
-                        border: none; // Tar bort gränsen
-                        border-radius: 50px; // Gör span helt rund
-                        color: lightgray;
-                        font-weight: bold;
+                        background-color: #f0f0f0;
+                        border: none;
+                        border-radius: 50px;
+                        color: black;
 
                         i {
-                            margin-right: 10px; // Återinför marginalen
-                            color: lightgray; // Återställer färgen på ikonen
+                            margin-right: 10px;
+                            color: black;
                         }
                     }
                 }
 
                 .form-control {
                     background-color: #f0f0f0;
-                    border-radius: 50px; // Gör input-fältet helt rund
-                    padding-left: 40px; // För att skapa utrymme för sökikonen
-                    border: 1px solid lightgray; // Återinför gränsen
+                    border: 1px solid lightgray;
+                    
+                   
+                    
                     &::placeholder {
                         color: lightgray;
+                        padding-left: 40px;
                     }
                 }
             }
@@ -2014,8 +2012,6 @@ footer {
         }
     }
 }
-
-
 
 
 

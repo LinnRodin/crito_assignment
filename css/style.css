@@ -1528,14 +1528,10 @@ footer .end-footer .social-media a i {
 }
 .sidebar-details .sidebar-container .container .input-group {
   position: relative;
-  border: 1px solid lightgray;
-  border-radius: 50px;
-  padding: 0 20px;
 }
 .sidebar-details .sidebar-container .container .input-group .input-group-prepend {
   position: absolute;
   top: 50%;
-  left: 16px;
   transform: translateY(-50%);
   background: none;
 }
@@ -1543,24 +1539,23 @@ footer .end-footer .social-media a i {
   background-color: #f0f0f0;
   border: none;
   border-radius: 50px;
-  color: lightgray;
-  font-weight: bold;
+  color: black;
 }
 .sidebar-details .sidebar-container .container .input-group .input-group-prepend span i {
   margin-right: 10px;
-  color: lightgray;
+  color: black;
 }
 .sidebar-details .sidebar-container .container .input-group .form-control {
   background-color: #f0f0f0;
-  border-radius: 50px;
-  padding-left: 40px;
   border: 1px solid lightgray;
 }
 .sidebar-details .sidebar-container .container .input-group .form-control::-moz-placeholder {
   color: lightgray;
+  padding-left: 40px;
 }
 .sidebar-details .sidebar-container .container .input-group .form-control::placeholder {
   color: lightgray;
+  padding-left: 40px;
 }
 .sidebar-details .sidebar-container .box-one-sidebar, .sidebar-details .sidebar-container .box-two-sidebar {
   border: 1px solid lightgray;
