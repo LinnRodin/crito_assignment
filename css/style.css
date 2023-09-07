@@ -1156,6 +1156,10 @@ footer .end-footer .social-media a i {
   height: 160px;
   resize: none;
 }
+.contact-section .form-container form .error-message {
+  color: red;
+  font-size: 12px;
+}
 .contact-section .form-container form button {
   width: 100%;
   height: 56px;
@@ -1170,6 +1174,11 @@ footer .end-footer .social-media a i {
 .contact-section .form-container form button:hover {
   background-color: black;
   color: white;
+}
+.contact-section .thank-you-message {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .map iframe {

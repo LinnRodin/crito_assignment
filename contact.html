@@ -65,47 +65,54 @@
     <!-- showcase end -->
 
 
-   <!-- Form Section -->
-
-   <section class="contact-section">
+    <!-- Form Section -->
+<section class="contact-section">
     <div class="content-container">
         <div class="info-section">
             <div class="info-box">
-              <i class="fa-regular fa-location-dot"></i>
-              <div class="text-section">
-                <h6>Visit Us</h6>
-                <p>Address line 1</p>
-                <p>Address line 2</p>
-              </div>
+                <i class="fa-regular fa-location-dot"></i>
+                <div class="text-section">
+                    <h6>Visit Us</h6>
+                    <p>Address line 1</p>
+                    <p>Address line 2</p>
+                </div>
             </div>
             <div class="info-box">
-              <i class="fa-solid fa-mobile-retro"></i>
-              <div class="text-section">
-                <h6>Call Us</h6>
-                <p>Phone number 1</p>
-                <p>Phone number 2</p>
-              </div>
+                <i class="fa-solid fa-mobile-retro"></i>
+                <div class="text-section">
+                    <h6>Call Us</h6>
+                    <p>Phone number 1</p>
+                    <p>Phone number 2</p>
+                </div>
             </div>
             <div class="info-box">
-              <i class="fa-regular fa-envelope"></i>
-              <div class="text-section">
-                <h6>Email Us</h6>
-                <p>Email address 1</p>
-                <p>Email address 2</p>
-              </div>
+                <i class="fa-regular fa-envelope"></i>
+                <div class="text-section">
+                    <h6>Email Us</h6>
+                    <p>Email address 1</p>
+                    <p>Email address 2</p>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
     <div class="form-container">
         <h1>Contact Us For Any Questions</h1>
-        <form>
-            <input type="text" placeholder="Name*" required>
-            <input type="email" placeholder="Email*" required>
-            <textarea placeholder="Your Message*" required></textarea>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name*" required>
+            <div id="name-error" class="error-message"></div>
+            
+            <input type="email" id="email" placeholder="Email*" required>
+            <div id="email-error" class="error-message"></div>
+            
+            <textarea id="message" placeholder="Your Message*"></textarea>
+            <div id="message-error" class="error-message"></div>
             <button type="submit">Send</button>
         </form>
+        <div id="thank-you-message" class="thank-you-message"></div>
     </div>
 </section>
+
+
 
 
 

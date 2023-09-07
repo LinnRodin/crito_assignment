@@ -1474,6 +1474,16 @@ footer {
                 resize: none;
             }
 
+
+
+            .error-message {
+                color: red;
+                font-size: 12px;
+            }
+
+
+          
+        
             button {
                 width: 100%; 
                 height: 56px;
@@ -1489,8 +1499,20 @@ footer {
                     background-color: black;
                     color: white;
                 }
+
+                
             }
+
+          
         }
+    }
+
+
+    .thank-you-message {
+        font-size: 1.5em; 
+        text-align: center; 
+        margin-top: 70px; 
+        
     }
 }
 
