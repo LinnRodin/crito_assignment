@@ -1584,7 +1584,15 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px; 
+
 }
+
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block; // gör så hela området blir klickbart
+    }
+
 
 .container-news {
     width: 1320px;
@@ -1657,6 +1665,9 @@ footer {
             font-weight: bold;
             margin: 5px 0;
         }
+
+
+        
     }
 }
 
@@ -2024,7 +2035,7 @@ footer {
 .carousel-control-prev {
     left: 50%; /* Centrerar kontrollen horisontellt */
     transform: translateX(-50%) translateY(-50%); /* Justerar positionen */
-    margin-right: 20px; /* Lägger till lite marginal mellan kontrollerna */
+    margin-right: 20px; /* Lägger till marginal mellan kontrollerna */
 }
 
 .carousel-control-next {

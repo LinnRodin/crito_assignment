@@ -1233,6 +1233,12 @@ footer .end-footer .social-media a i {
   padding: 20px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .container-news {
   width: 1320px;
   height: auto;
@@ -1620,7 +1626,7 @@ footer .end-footer .social-media a i {
 .carousel-control-prev {
   left: 50%; /* Centrerar kontrollen horisontellt */
   transform: translateX(-50%) translateY(-50%); /* Justerar positionen */
-  margin-right: 20px; /* Lägger till lite marginal mellan kontrollerna */
+  margin-right: 20px; /* Lägger till marginal mellan kontrollerna */
 }
 
 .carousel-control-next {
