@@ -172,12 +172,16 @@
                 flex-direction: row; 
                 margin-top: 70px;
 
-                button {
+                a {
                     width: 180px;
                     height: 40px;
                     margin-right: 10px;
                     border-radius: 30px;
                     transition: background-color 0.3s, color 0.3s;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
 
                     i {
                         margin-left: 5px;
@@ -196,6 +200,7 @@
 
                     &:last-child {
                         background-color: #F0EFE9;;
+                        border: 1px solid #615e5e;
 
                         &:hover {
                             background-color: #000;
@@ -228,6 +233,7 @@
         }
     }
 }
+
 
 
 
