@@ -318,14 +318,16 @@
         }
 
         .showcase-two-rightside {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin-top: 20px;
+           
            
 
             .umb-block-list {
-                display: contents;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin-top: 20px;
+                row-gap: 60px;
+                column-gap: 20px;
             }
 
             .custom-card {
@@ -497,29 +499,35 @@
 
 // Our Services ----------------------------------------------------------------------------------------------------------------
 
-$light-yellow: #F0D082;
+
 
 .beige-box {
     width: 100%;
-    height: 870px;
     background-color: #F0EFE9;
     position: relative;
-    margin-top: 100px;
+    padding: 100px 0;
+    margin-top: 50px;
 
     .container {
         max-width: 1920px;
         margin: 0 auto;
-        margin-top: 100px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .our-services, h1 {
+            text-align: center;
+        }
 
         .our-services {
             color: #FF4500;
-            margin-left: 270px;
-            padding-top: 100px;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-weight: bold;
-            margin-left: 270px;
+            margin-bottom: 40px;
         }
 
         .content-box {
@@ -527,16 +535,17 @@ $light-yellow: #F0D082;
             justify-content: space-between;
             flex-wrap: wrap;
             width: 1320px;
-            height: 630px;
-            margin: 100px auto;
+            margin-bottom: 20px;
 
             .tile {
                 width: 308px;
                 height: 333px;
+                background-color: white;
                 text-align: center;
                 padding: 20px;
                 box-sizing: border-box;
                 position: relative;
+                margin-bottom: 20px;
 
                 h6 {
                     margin-top: 50px;
@@ -560,17 +569,13 @@ $light-yellow: #F0D082;
                     height: 40px;
                     border-radius: 50%;
                     position: absolute;
-                    bottom: 10px;
+                    bottom: 20px;
                     left: 50%;
                     transform: translateX(-50%);
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-bottom: 20px;
-                }
-
-                &.white-tile {
-                    background-color: white;
+                    text-decoration: none;
                 }
 
                 &.yellow-tile {
@@ -578,11 +583,12 @@ $light-yellow: #F0D082;
                 }
             }
 
-            .black-btn {
+            .black-btn, .white-btn {
                 background-color: black;
                 color: white;
                 border: none;
                 transition: background-color 0.3s, color 0.3s;
+                text-decoration: none;
 
                 &:hover {
                     background-color: white;
@@ -593,8 +599,6 @@ $light-yellow: #F0D082;
             .white-btn {
                 background-color: white;
                 color: black;
-                border: none;
-                transition: background-color 0.3s, color 0.3s;
 
                 &:hover {
                     background-color: #000;
@@ -608,15 +612,9 @@ $light-yellow: #F0D082;
             border: 2px solid black;
             border-radius: 40px;
             padding: 10px 20px;
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 50px;
             transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
 
             &:hover {
                 background-color: #000;
@@ -633,6 +631,7 @@ $light-yellow: #F0D082;
         position: absolute;
         bottom: 0;
         right: 0;
+
         img {
             position: absolute;
             bottom: 0;
@@ -640,7 +639,6 @@ $light-yellow: #F0D082;
         }
     }
 }
-
 
 
 //Why Choose Us----------------------------------------------------------------------------------------------------
@@ -848,6 +846,7 @@ $light-yellow: #F0D082;
         line-height: 56px;
         margin: 100px auto 0;
         transition: background-color 0.3s, color 0.3s;
+        text-decoration: none;
   
         i {
           margin-left: 10px; 
@@ -1149,7 +1148,7 @@ $light-yellow: #F0D082;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px; // Gav lite mer utrymme för paginering
+        margin-bottom: 20px; 
     }
 
     .card-article {
