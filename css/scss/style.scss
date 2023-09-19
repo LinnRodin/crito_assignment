@@ -259,81 +259,110 @@
 
 .showcase-two {
     margin-top: 100px;
-    
 
     .container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
         width: 1320px;
         height: 600px;
-        
 
-        .second-title {
-            margin-top: 50px;
-            margin-bottom: 10px;
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-
-        .button-learnmore {
+        .showcase-two-leftside {
             display: flex;
-            flex-direction: row; 
-            margin-top: 70px;
-            
-            .yellow-button {
-                width: 300px;
-                height: 40px;
-                margin-right: 10px;
-                border-radius: 30px; 
-                background-color: #F0D082;
-                transition: background-color 0.3s, color 0.3s;
-                border: none;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
 
-                &:hover {
-                 background-color: #000;
-                 color: white;
-                 
-                }
-
-                i {
-                    margin-left: 5px;
-                }
-
+            h2.feature-title {
+                margin-top: 5px;
+                font-size: 18px;
+                color: #FF4500; 
             }
 
+            .second-title {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 40px;
+                font-weight: bold;
+            }
 
-        }
-        
-    }
+            .button-learnmore {
+                display: flex;
+                flex-direction: row;
+                margin-top: 70px;
 
-    .flex-container {
-        display: flex;
-        gap: 30px;
-    
-        > div {
-            flex: 1; 
+                a.yellow-button {
+                    width: 300px;
+                    height: 40px;
+                    margin-right: 10px;
+                    border-radius: 30px;
+                    background-color: #F0D082;
+                    transition: background-color 0.3s, color 0.3s;
+                    border: none;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: black;
+
+                    &:hover {
+                        background-color: #000;
+                        color: white;
+                    }
+
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .showcase-two-rightside {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 20px;
+           
+
+            .umb-block-list {
+                display: contents;
+            }
+
+            .custom-card {
+               
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h5 {
+
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        
+                       
+                    }
+
+                    p {
+
+                        margin-top: 10px;
+                    }
+                    
+
+                    i {
+                        margin-bottom: 20px;
+                        
+
+                    }
+                }
+            }
         }
     }
-    
-    .showcase-two-rightside {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    
-        .card-row {
-            display: flex;
-            gap: 100px; 
-            padding: 60px;
-        }
-    
-        .card-body i {
-            margin-bottom: 25px; 
-        }
-    }
-    
-    
-    
 }
+
+
+
 
 // About Company--------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1113,7 +1142,7 @@ $light-yellow: #F0D082;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 20px; // Lade till marginal för att ge utrymme mellan header och karusell
+    margin-top: 20px; 
 
     .carousel-wrapper {
         display: flex;

@@ -195,22 +195,35 @@ a:visited {
   margin-top: 100px;
 }
 .showcase-two .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   width: 1320px;
   height: 600px;
 }
-.showcase-two .container .second-title {
-  margin-top: 50px;
+.showcase-two .container .showcase-two-leftside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.showcase-two .container .showcase-two-leftside h2.feature-title {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #FF4500;
+}
+.showcase-two .container .showcase-two-leftside .second-title {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 40px;
   font-weight: bold;
 }
-.showcase-two .container .button-learnmore {
+.showcase-two .container .showcase-two-leftside .button-learnmore {
   display: flex;
   flex-direction: row;
   margin-top: 70px;
 }
-.showcase-two .container .button-learnmore .yellow-button {
+.showcase-two .container .showcase-two-leftside .button-learnmore a.yellow-button {
   width: 300px;
   height: 40px;
   margin-right: 10px;
@@ -218,33 +231,42 @@ a:visited {
   background-color: #F0D082;
   transition: background-color 0.3s, color 0.3s;
   border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
-.showcase-two .container .button-learnmore .yellow-button:hover {
+.showcase-two .container .showcase-two-leftside .button-learnmore a.yellow-button:hover {
   background-color: #000;
   color: white;
 }
-.showcase-two .container .button-learnmore .yellow-button i {
+.showcase-two .container .showcase-two-leftside .button-learnmore a.yellow-button i {
   margin-left: 5px;
 }
-.showcase-two .flex-container {
-  display: flex;
-  gap: 30px;
+.showcase-two .container .showcase-two-rightside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
 }
-.showcase-two .flex-container > div {
-  flex: 1;
+.showcase-two .container .showcase-two-rightside .umb-block-list {
+  display: contents;
 }
-.showcase-two .showcase-two-rightside {
+.showcase-two .container .showcase-two-rightside .custom-card .card-body {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+.showcase-two .container .showcase-two-rightside .custom-card .card-body h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.showcase-two .container .showcase-two-rightside .custom-card .card-body p {
   margin-top: 10px;
 }
-.showcase-two .showcase-two-rightside .card-row {
-  display: flex;
-  gap: 100px;
-  padding: 60px;
-}
-.showcase-two .showcase-two-rightside .card-body i {
-  margin-bottom: 25px;
+.showcase-two .container .showcase-two-rightside .custom-card .card-body i {
+  margin-bottom: 20px;
 }
 
 .about-company .container {
