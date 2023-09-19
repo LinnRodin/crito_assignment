@@ -531,100 +531,116 @@
         }
 
         .content-box {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 1320px;
-            margin-bottom: 20px;
-
-            .tile {
-                width: 308px;
-                height: 333px;
-                background-color: white;
-                text-align: center;
-                padding: 20px;
-                box-sizing: border-box;
-                position: relative;
+           
+            .umb-block-list{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 1320px;
                 margin-bottom: 20px;
 
-                h6 {
-                    margin-top: 50px;
-                }
+                .tile {
+                    width: 308px;
+                    height: 333px;
+                    background-color: white;
+                    text-align: center;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    margin-bottom: 20px;
 
-                p {
-                    margin-bottom: 50px;
+                    &.white-tile {
+                        &:hover {
+                            background-color: #F0D082;
+                            color: black;
+                        }
+        
+                    }
+    
+                    h6 {
+                        margin-top: 50px;
+                    }
+    
+                    p {
+                        margin-bottom: 50px;
+                    }
+    
+                    .decorative-stripe {
+                        width: 50px;
+                        height: 5px;
+                        background-color: black;
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                    }
+    
+                    .circle-btn {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                    }
+    
                 }
-
-                .decorative-stripe {
-                    width: 50px;
-                    height: 5px;
+    
+                .black-btn {
                     background-color: black;
-                    position: absolute;
-                    top: 20px;
-                    left: 20px;
-                }
-
-                .circle-btn {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    position: absolute;
-                    bottom: 20px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    color: white;
+                    border: none;
+                    transition: background-color 0.3s, color 0.3s;
                     text-decoration: none;
+    
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
                 }
-
-                &.yellow-tile {
-                    background-color: $light-yellow;
-                }
-            }
-
-            .black-btn, .white-btn {
-                background-color: black;
-                color: white;
-                border: none;
-                transition: background-color 0.3s, color 0.3s;
-                text-decoration: none;
-
-                &:hover {
+    
+                .white-btn {
                     background-color: white;
                     color: black;
+    
+                    &:hover {
+                        background-color: #000;
+                        color: white;
+                    }
                 }
             }
+        }
 
-            .white-btn {
-                background-color: white;
-                color: black;
-
+        
+            .browse-btn {
+                background-color: #F0EFE9;
+                border: 2px solid black;
+                border-radius: 40px;
+                padding: 10px 20px;
+                margin-bottom: 50px;
+                transition: background-color 0.3s, color 0.3s;
+                text-decoration: none;
+                display: inline-block;
+    
                 &:hover {
                     background-color: #000;
                     color: white;
                 }
-            }
-        }
-
-        .browse-btn {
-            background-color: #F0EFE9;
-            border: 2px solid black;
-            border-radius: 40px;
-            padding: 10px 20px;
-            margin-bottom: 50px;
-            transition: background-color 0.3s, color 0.3s;
-            text-decoration: none;
-
-            &:hover {
-                background-color: #000;
-                color: white;
+    
+                i {
+                    margin-left: 10px;
+                }
             }
 
-            i {
-                margin-left: 10px;
-            }
-        }
+
+            
+
+       
+            
     }
 
     .image-our-services {
