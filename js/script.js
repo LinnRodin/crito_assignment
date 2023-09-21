@@ -49,3 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+// Carousel style adjustment
+
+
+
+

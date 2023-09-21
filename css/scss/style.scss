@@ -1686,19 +1686,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; 
-
+    //padding: 20px; 
 }
 
-    .card-link {
-        text-decoration: none;
-        color: inherit;
-        display: block; // gör så hela området blir klickbart
-    }
-
-
 .container-news {
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
     height: auto; 
     display: flex;
     flex-direction: column;
@@ -1707,8 +1700,6 @@ footer {
 }
 
 .header-news {
-    display: flex;
-    align-items: flex-start;
     width: 100%;
   
     h1 {
@@ -1718,90 +1709,115 @@ footer {
     }
 }
 
-.cards-news {
+.wrapper-cards-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+
+    .card-link {
+        text-decoration: none; 
+        color: inherit;
+        display: block;
+    }
+    
+}
+
+.card-body-news {
+    flex: 0 0 calc(33.333% - 20px);
+    box-sizing: border-box; 
+    height: 428px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px; 
+    align-items: flex-start;
+    position: relative;
 
-    .wrapper-cards-news {
+    .linkedin-female {
+        width: 420px;
+        height: 230px;
+    }
+    
+    
+
+    .date-stamp {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #F0D082;
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+        width: 56px;
+        height: 64px;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px; 
     }
 
-    .card-body-news {
-        flex: 0 0 auto;
-        width: 420px;
-        height: 428px;
-        margin: 0 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
+    img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
 
-        .date-stamp {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background-color: #F0D082;
-            color: black;
-            font-weight: bold;
-            padding: 10px;
-            width: 56px;
-            height: 64px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            width: 420px;
-            height: 230px;
-        }
-
-        h6 {
-            font-weight: bold;
-            margin: 5px 0;
-        }
-
-
-        
+    h6 {
+        font-weight: bold;
+        margin: 5px 0;
     }
 }
 
-.pagination-container {
+
+/* Container for the controls */
+.carousel-controls-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-
-    .pagination-btn {
-        background-color: #f0f0f0;
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-
-    .pagination-numbers {
-        display: flex;
-        gap: 10px;
-        margin: 0 20px;
-
-        span {
-            cursor: pointer;
-            padding: 10px 20px;
-            background-color: #f0f0f0;
-        }
-    }
+    position: relative;
+    margin-bottom: 80px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
 
+.carousel-control-prev {
+    left: calc(49% - 40px); 
+}
+
+.carousel-control-next {
+    right: calc(49% - 40px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: "" !important;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg);
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg);
+}
 
 
 
@@ -2126,39 +2142,39 @@ footer {
     margin: 5px 0;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.details-carousel-control-prev,
+.details-carousel-control-next {
     position: absolute;
-    top: 84%; /* Flyttar kontrollerna under karusellen */
+    top: 150%; 
     width: 30px;
     height: 30px;
-    transform: translateY(-50%); /* Centrerar kontrollerna vertikalt */
+    transform: translateY(-50%); 
 }
 
-.carousel-control-prev {
-    left: 50%; /* Centrerar kontrollen horisontellt */
-    transform: translateX(-50%) translateY(-50%); /* Justerar positionen */
-    margin-right: 20px; /* Lägger till marginal mellan kontrollerna */
+.details-carousel-control-prev {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    margin-right: 20px; 
 }
 
-.carousel-control-next {
-    right: 46%; /* Centrerar kontrollen horisontellt */
-    transform: translateX(50%) translateY(-50%); /* Justerar positionen */
-    margin-left: 20px; /* Lägger till lite marginal mellan kontrollerna */
+.details-carousel-control-next {
+    right: 46%;
+    transform: translateX(50%) translateY(-50%); 
+    margin-left: 20px; 
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: none !important;
+//Används ej men kan komma att användas. 
+
+/* .details-carousel-control-prev-icon,
+.details-carousel-control-next-icon {
+    background-image: none;
     width: 30px;
     height: 30px;
-    border: 1px solid #000;
     border-radius: 50%;
-    background-color: #000;
 }
 
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
+.details-carousel-control-prev-icon::before,
+.details-carousel-control-next-icon::before {
     content: "" !important;
     border: solid white;
     border-width: 0 2px 2px 0;
@@ -2166,16 +2182,20 @@ footer {
     padding: 3px;
 }
 
-.carousel-control-prev-icon::before {
+.details-carousel-control-prev-icon::before {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
 
-.carousel-control-next-icon::before {
+.details-carousel-control-next-icon::before {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-}
+} */
 
+.wrapper-details .details-carousel-control-prev,
+.wrapper-details .details-carousel-control-next {
+    display: none;
+}
 
 
 
